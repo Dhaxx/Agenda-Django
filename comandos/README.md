@@ -16,5 +16,6 @@ git init
 git add .
 git commit -m 'commit inicial'
 git log --oneline (Ver o commit)
-git remote add origin git@github.com:seu-username/seu-repositorio.git (SSH)
+git remote add origin https://github.com/username/project.git (HTTPS)
+git push --set-upstream origin main
 =========================
