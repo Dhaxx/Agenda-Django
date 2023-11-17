@@ -30,7 +30,8 @@ configurar o app no INSTALED_APPS no root
 
 [Criando Migrations]
 =========================
-python manage.py migrate
+python manage.py makemigrations (Toda vez que alterar algo no models.py, executa o makemigrations)
+python manage.py migrate (Toda vez que alterar algo no models.py, executa o migrate)
 =========================
 
 [Criando e Configurando Super User]
