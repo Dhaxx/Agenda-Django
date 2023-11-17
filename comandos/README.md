@@ -19,3 +19,22 @@ git log --oneline (Ver o commit)
 git remote add origin https://github.com/username/project.git (HTTPS)
 git push --set-upstream origin main
 =========================
+
+[Criando App Contact]
+=========================
+python manage.py startapp contact
+definir as view (index) 
+definir a url e app_name
+configurar o app no INSTALED_APPS no root
+=========================
+
+[Criando Migrations]
+=========================
+python manage.py migrate
+=========================
+
+[Criando e Configurando Super User]
+=========================
+python manage.py createsuperuser
+python manage.py changepassword USERNAME
+=========================
