@@ -39,3 +39,16 @@ python manage.py migrate (Toda vez que alterar algo no models.py, executa o migr
 python manage.py createsuperuser
 python manage.py changepassword USERNAME
 =========================
+
+[Django Shell]
+=========================
+python manage.py shell 
+from contact.models import Contact (importar o model)
+contato = Contact(**fields) (criar um objeto de forma lazy)
+contato.save() (salvar o objeto)
+contato = Contact.objects.create(**fields) (criar um objeto de forma explicita)
+contato = Contact.objects.get(id=1) (pegar um objeto pelo id ou pk)
+contato.field_name1 = 'value' (atualizar um campo)
+contato.save() (salvar o objeto)
+contato.delete() (deletar o objeto)
+=========================
